@@ -1,42 +1,67 @@
 <?php
 
       // Comando While(ENQUANTO)
-      
+
+      echo PHP_EOL;
+      echo "__________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo "a) Crie um programa que solicite ao usuário para inserir um número inteiro positivo e, 
+      em seguida, exiba todos os números pares entre 0 e o número inserido." .  PHP_EOL;
+      echo "___________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
        
-      // a) 	Crie um programa que solicite ao usuário para inserir um número inteiro positivo e, em seguida, exiba todos os números pares entre 0 e o número inserido.
       
       echo "Insira um número inteiro positivo: " . PHP_EOL;
+
       $numero = intval(trim(fgets(STDIN)));
       $i = 0;
       
       while ($i <= $numero) {
           if ($i % 2 == 0) {
-              echo $i . PHP_EOL;
+      
+                echo "Os números pares entre $i e $numero é: " . PHP_EOL;
           }
           $i++;
       }
       
       
       
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
       
-      // b)	Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, exiba a tabuada desse número até o número 10.
       
       echo "Insira um número inteiro: " . PHP_EOL;
+
       $numero = intval(trim(fgets(STDIN)));
       $i = 1;
       
       while ($i <= 10) {
-          echo "$numero x $i = " . ($numero * $i) . PHP_EOL;
+            
+          echo "A tabuada do número $numero até o numero 10 é = " . ($numero * $i) . PHP_EOL;
+            
           $i++;
       }
       
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo "c) Crie um programa que solicite ao usuário para inserir uma sequência de números inteiros e, 
+      em seguida, exiba a soma desses números.".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
-      
-      
-      // c) 	Crie um programa que solicite ao usuário para inserir uma sequência de números inteiros e, em seguida, exiba a soma desses números.
       
       echo "Insira uma sequência de números inteiros (digite 'done' para finalizar): " . PHP_EOL;
+
       $soma = 0;
       
       while (true) {
@@ -47,10 +72,17 @@
           $soma += intval($input);
       }
       
-      echo "A soma dos números é: $soma" . PHP_EOL;
+      echo "A soma dos números inseridos é: " . $soma . PHP_EOL;
       
       
-      
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
       // d)	Desenvolva um programa que solicite ao usuário para inserir uma senha e, em seguida, permita que o usuário tente inserir a senha até três vezes. 
       Caso o usuário acerte a senha, exiba uma mensagem de sucesso. Caso contrário, exiba uma mensagem informando que a senha está incorreta.
@@ -75,7 +107,14 @@
       }
       
       
-      
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
        
       // e) 	Crie um programa que solicite ao usuário para inserir números inteiros até que um número negativo seja inserido. 
       Em seguida, exiba a soma dos números inseridos (excluindo o número negativo).
@@ -101,7 +140,14 @@
 
 
        
-      
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
       // a)	Crie um programa que solicite ao usuário para inserir um número inteiro positivo e, em seguida, exiba todos os números pares entre 0 e o número inserido.
       
@@ -118,7 +164,14 @@
       
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
       // b)	Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, exiba a tabuada desse número até o número 10.
       
@@ -132,7 +185,15 @@
       } while ($i <= 10);
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
+
       // c)	Crie um programa que solicite ao usuário para inserir uma sequência de números inteiros e, em seguida, exiba a soma desses números.
       
       echo "Insira uma sequência de números inteiros (digite 'done' para finalizar): " . PHP_EOL;
@@ -150,7 +211,15 @@
       
       
       
-      
+      echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
+
       // d)	Desenvolva um programa que solicite ao usuário para inserir uma senha e, em seguida, permita que o usuário tente inserir a senha até três vezes. 
       Caso o usuário acerte a senha, exiba uma mensagem de sucesso. Caso contrário, exiba uma mensagem informando que a senha está incorreta.
       
@@ -176,7 +245,15 @@
       
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
+
       // e)	Crie um programa que solicite ao usuário para inserir números inteiros até que um número negativo seja inserido. Em seguida, exiba a soma dos números inseridos (excluindo o número negativo).
       
       $soma = 0;
@@ -193,7 +270,14 @@
       
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
       // f)	Escreva um programa que gere números aleatórios entre 1 e 100 até que o número 50 seja gerado. O programa deve contar quantos números foram gerados até que o 50 aparecesse.
       
@@ -208,7 +292,14 @@
       
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
       
      // g)	Escreva um programa que leia uma senha do usuário e continue solicitando até que a senha correta seja digitada. A senha correta é "1234".
       
@@ -222,7 +313,15 @@
       echo "Senha correta! Acesso permitido.";
       
       
-      
+            echo PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo " b) Desenvolva um programa que solicite ao usuário para inserir um número inteiro e, em seguida, 
+      exiba a tabuada desse número até o número 10".  PHP_EOL;
+      echo "___________________________________________________________________________________________________" .  PHP_EOL;
+      echo PHP_EOL;
+      echo PHP_EOL;
+
       // h)	Escreva um programa que leia uma série de números fornecidos pelo usuário e exiba a média. O programa deve parar de ler quando o usuário digitar um número negativo.
       
       $soma = 0;
