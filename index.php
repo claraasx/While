@@ -202,15 +202,20 @@
      
       
       echo "Insira um número inteiro: " . PHP_EOL;
+      echo PHP_EOL;
+
       $numero = intval(trim(fgets(STDIN)));
       $i = 1;
       
       do {
-          echo "$numero x $i = " . ($numero * $i) . PHP_EOL;
+          echo "A tabuada do número $numero até o numero 10 é: " . ($numero * $i) . PHP_EOL;
+            
           $i++;
       } while ($i <= 10);
       
-      
+
+      echo PHP_EOL;
+      echo PHP_EOL;
       echo PHP_EOL;
       echo "________________________________________________________________________________________________________________________________________" .  PHP_EOL;
       echo PHP_EOL;
@@ -231,7 +236,7 @@
           }
       } while ($input != "done");
       
-      echo "A soma dos números é: $soma" . PHP_EOL;
+      echo "A soma dos números é: " . $soma . PHP_EOL;
       
       
       
@@ -252,24 +257,33 @@
       
       do {
           echo "Insira a senha: " . PHP_EOL;
+            
           $senha = trim(fgets(STDIN));
+            
           if ($senha == $senhaCorreta) {
-              echo "Senha correta! Acesso permitido." . PHP_EOL;
-              break;
+                
+            echo "Senha correta! Acesso permitido." . PHP_EOL;
+            echo PHP_EOL;
+            break;
+                
           } else {
-              echo "Senha incorreta. Tente novamente." . PHP_EOL;
+            echo "Senha incorreta. Tente novamente." . PHP_EOL;
+            echo PHP_EOL;
+                
           }
           $tentativas++;
+            
       } while ($tentativas < 3);
       
       if ($tentativas == 3) {
-          echo "Número máximo de tentativas excedido." . PHP_EOL;
+            
+          echo "Número máximo de tentativas excedido. Tente novamente mais tarde." . PHP_EOL;
       }
       
       
       
       
-            echo PHP_EOL;
+      echo PHP_EOL;
       echo "_____________________________________________________________________________________________________________________" .  PHP_EOL;
       echo PHP_EOL;
       echo "e) Crie um programa que solicite ao usuário para inserir números inteiros até que um número negativo seja inserido. 
@@ -283,17 +297,25 @@
       $soma = 0;
       
       do {
-          echo "Insira um número inteiro: " . PHP_EOL;
+            echo "Insira um número inteiro: " . PHP_EOL;
+            echo PHP_EOL;
+            echo PHP_EOL;
+            
           $numero = intval(trim(fgets(STDIN)));
+            
           if ($numero >= 0) {
               $soma += $numero;
           }
       } while ($numero >= 0);
       
       echo "A soma dos números é: $soma" . PHP_EOL;
-      
-      
-      
+      echo PHP_EOL;
+
+
+
+
+      echo PHP_EOL;
+      echo PHP_EOL;
       echo PHP_EOL;
       echo "___________________________________________________________________________________________________" .  PHP_EOL;
       echo PHP_EOL;
@@ -313,9 +335,11 @@
       } while ($numero != 50);
       
       echo "Foram gerados $count números até aparecer o número 50." . PHP_EOL;
-      
-      
-      
+
+
+
+      echo PHP_EOL;
+      echo PHP_EOL;
       echo PHP_EOL;
       echo "___________________________________________________________________________________________________________________" .  PHP_EOL;
       echo PHP_EOL;
@@ -331,12 +355,18 @@
       
       do {
           echo "Insira a senha: ";
+            echo PHP_EOL;
+            
           $senha = trim(fgets(STDIN));
       } while ($senha != $senhaCorreta);
       
       echo "Senha correta! Acesso permitido.";
+      echo PHP_EOL;
       
-      
+
+
+      echo PHP_EOL;
+      echo PHP_EOL;
       echo PHP_EOL;
       echo "___________________________________________________________________________________________________" .  PHP_EOL;
       echo PHP_EOL;
@@ -351,17 +381,22 @@
       
       do {
           echo "Insira um número inteiro: ";
+          echo PHP_EOL;
+            
           $numero = intval(trim(fgets(STDIN)));
           if ($numero >= 0) {
               $soma += $numero;
               $count++;
           }
+            
       } while ($numero >= 0);
       
       if ($count > 0) {
           $media = $soma / $count;
           echo "A média dos números é: $media";
+          echo PHP_EOL;
       } else {
           echo "Nenhum número positivo foi inserido.";
+          echo PHP_EOL;
       }
 ?>
